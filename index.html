@@ -82,10 +82,8 @@
 			<li class="next">Tools, frameworks and template engines</li>
 			<li class="next">Block libraries</li>
 		</ul>
-			<li class="next">Abstraction</li>
-			<li class="next">Reusability</li>
-			<li class="next">Declarativness</li>
-			<li class="next">BEM Platform: How to start?</li>
+			<li class="next">What BEM can do that others can't?</li>
+			<li class="next">How to start?</li>
 		</ul>
 		<footer>
 			Let’s run through what we are going to talk about
@@ -169,10 +167,10 @@
 	<section class="slide"><div>
 		<h2>Problems we faced</h2>
 		<ul>
-			<li>Long cascade affected speed of rendering</li>
-			<li>CSS classes forced us to reinvent names everyday</li>
-			<li>0 incapsulation</li>
-			<li>Intecartive interfaces</li>
+			<li>Low speed of rendering</li>
+			<li>Different names for classes (?)</li>
+			<li>Rafactoring is a pain (?)</li>
+			<li>Zero reuse</li>
 		</ul>
 		<footer>
 			There are certain problems we faced. And not only we faced them. Most of them are still problems even when we have a lot of modern web development tools in our hands. So.
@@ -192,7 +190,7 @@
 		<ul>
 			<li>Long cascade affected speed of rendering...</li>
 			<li class="next">... so, BEM helped us eliminate cascade</li>
-			<li class="next">by using block__element__modifier naming system</li>
+			<li class="next">by using block__element_modifier naming system</li>
 		</ul>
 		<footer>
 			With this plain structure CSS we get a profit in rendering
@@ -207,7 +205,7 @@
 		</ul>
 		<footer>
 			It was a complete disaster. Imagine that you need to invent names for UI pieces everyday. And this pieces changes and names changes from service to service from team to team. And at the end they make no sense at all!
-			So with BEM block__element__modifier simple rules we had at least understanding throughout of all Yandex services.
+			So with BEM block__element_modifier simple rules we had at least understanding throughout of all Yandex services.
 		</footer>
 	</div></section>
 
@@ -230,7 +228,7 @@
 			<li class="next">...is no longer a threat with BEM plain file structure</li>
 		</ul>
 		<footer>
-			Intecartive interfaces forced us to use more and more Javascript on the page that made maintainance harder and harder every day with high risks and no change to re-use it. Time of developement and maintainance grew up, developers went crazy trying to cope with it switching from project to project.
+			Interactive interfaces forced us to use more and more Javascript on the page that made maintainance harder and harder every day with high risks and no change to re-use it. Time of developement and maintainance grew up, developers went crazy trying to cope with it switching from project to project.
 			So, guess how creating a plain file structure in BEM helped us live better life!
 			Now you can simply find a block on the page, go into the BEM tree, find a block folder, find a technology file there (css, js, tests, docs, etc) and do whatever you need to do with it!
 		</footer>
@@ -255,7 +253,8 @@
 	<section class="slide"><div>
 		<h2>What is BEM now?</h2>
 		<ul>
-			<li>libraries</li>
+			<li>methodology</li>
+			<li class="next">libraries</li>
 			<li class="next">tools</li>
 			<li class="next">JS-framework</li>
 			<li class="next">templating engine</li>
@@ -348,7 +347,7 @@ But web applications nowadays are much closer to desktop applications then to st
 		<h2>Abstraction</h2>
 		<ul>
 			<li>speak the same terms</li>
-			<li class="next">code become self-documented</li>
+			<li class="next">code becomes self-documented</li>
 			<li class="next">possibility to update components appear</li>
 		</ul>
 		<footer>
