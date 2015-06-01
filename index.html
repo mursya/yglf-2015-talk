@@ -310,7 +310,7 @@
 			<li class="next">Block libraries</li>
 		</ul>
 		<footer>
-			We've not enough time to cove everything so I speak about Methodology and give very brif description and links to the platform parts.
+			We've not enough time to cover everything so I speak about Methodology and give a very brif description and links to the platform parts.
 		</footer>
 	</div></section>
 
@@ -334,12 +334,49 @@
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>Abstraction</h2>
-		<footer>
-			All these divs and spans gives developer no clue about what they really are.
-Actualy we use just the same low level HTML invented for browsers in 1993.
+		<h2>Where pain comes from</h2>
+		<ul>
+			<li>Support someone's else code</li>
+			<ul>
+				<li class="next">Your own in a month</li>
+				<li class="next">#foot div div *</li>
+			</ul>
+		</ul>
+		<footer></footer>
+	</div></section>
 
-But web applications nowadays are much closer to desktop applications then to static documents of Web 1.0. We need high level abstraction of assembler browsers suggest.
+	<section class="slide"><div>
+		<h2>Where pain comes from</h2>
+		<ul>
+			<li>Support someone's else code</li>
+			<li class="next">Refactoring</li>
+			<li class="next">Reuse</li>
+			<ul>
+				<li class="next">Copy/paste doen't work</li>
+				<li class="next">Hard to tell what to copy</li>
+				<li class="next">Useless code</li>
+				<li class="next">Update is a nightmare</li>
+			</ul>
+		</ul>
+		<footer></footer>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Where pain comes from</h2>
+		<ul>
+			<li>Support someone's else code</li>
+			<li class="next">Refactoring</li>
+			<li class="next">Reuse</li>
+			<li class="next">A lot of different frameworks &apm; libs</li>
+		</ul>
+		<footer></footer>
+	</div></section>
+
+
+	<section class="slide"><div>
+		<h2>What BEM can do that others can't</h2>
+		<footer>
+			BEM is a remedy for all this pain of web development.
 		</footer>
 	</div></section>
 
@@ -375,6 +412,25 @@ But web applications nowadays are much closer to desktop applications then to st
 			Modifiers represent differences between similar blocks and — which is more important — the state of a block or an element.
 		</footer>
 	</div></section>
+
+	<section class="slide cover w"><div>
+		<h2>Block</h2>
+		<img src="pictures/block.png" alt="block">
+		<footer></footer>
+	</div></section>
+
+	<section class="slide cover w"><div>
+	<h2>Block,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elements</h2>
+		<img style="margin-top: 50px" src="pictures/elements.png" alt="elements">
+		<footer></footer>
+	</div></section>
+
+	<section class="slide cover w"><div>
+	<h2>Block,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elements,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifiers</h2>
+		<img src="pictures/modifiers.png" alt="modifiers">
+		<footer></footer>
+	</div></section>
+
 	<section class="slide cover w"><div>
 		<img src="pictures/cat_type_red.jpg" alt="cat_type_red">
 		<footer></footer>
@@ -393,32 +449,17 @@ But web applications nowadays are much closer to desktop applications then to st
 	</div></section>
 
 	<section class="slide"><div>
-		<h2>BEM is a methodology</h2>
+		<h2>Some of BEM principles</h2>
 		<ul>
-			<li>to build web services</li>
-			<li>using the same language for all</li>
-			<li>and scaling</li>
-			<li>enabling full stack of techs and tools</li>
+			<li>Map document to BEM blocks — no tag or id selectors</li>
+			<li class="next">No CSS outside of blocks</li>
+			<li class="next">Independent blocks -> no global reset</li>
+			<li class="next">Avoid cascade</li>
 		</ul>
 		<footer>
-			BEM is a full stack of techs and tools. Really full. No more need to find the way how to connect one framework with another, building tools with optimisers. BEM gives everything ready and still very loosely coupled so you can take as much BEM as you need.
+			[before Next] Do you remember old school? I know that organisers do.
 		</footer>
 	</div></section>
-
-	<section class="slide"><div>
-		<h2>BEM is a methodology</h2>
-		<ul>
-			<li>to build web services</li>
-			<li>using the same language for all</li>
-			<li>and scaling</li>
-			<li>enabling full stack of techs and tools</li>
-			<li>and ready-made components</li>
-		</ul>
-		<footer>
-			BEM is also libraries full of great ready-made components. You'll learn why a thing they are so awesome till the end of my talk.
-		</footer>
-	</div></section>
-
 
 	<section class="slide"><div>
 		<h2>File system</h2>
@@ -450,21 +491,32 @@ But web applications nowadays are much closer to desktop applications then to st
 			We also optionally create separate files and folders for elements and modifiers so as a result we have possibility build a project with just necessary files.
 		</footer>
 	</div></section>
-	<section class="slide section"><div>
-		<h2>BEM for CSS</h2>
-	</div></section>
+
 	<section class="slide"><div>
-		<h2>BEM principles for CSS</h2>
-		<ul>
-			<li>Map document to BEM blocks — no tag or id selectors</li>
-			<li class="next">No CSS outside of blocks</li>
-			<li class="next">Independent blocks -> no global reset</li>
-			<li class="next">Avoid cascade</li>
-		</ul>
+		<h2>BEM tree</h2>
+		<p>Before:</p>
+		<p>div > div > span</p>
+		<p>After:</p>
+		<p>block1 > block2 > block2__elem</p>
 		<footer>
-			[before Next] Do you remember old school? I know that organisers do.
+			As you know there are two difficulties in programming: naming things and cache invalidation. And BEM solves the first one.
 		</footer>
 	</div></section>
+
+	<section class="slide"><div>
+		<h2>What is BEM now?</h2>
+		<ul>
+			<li>methodology</li>
+			<li>libraries</li>
+			<li>tools</li>
+			<li>JS-framework</li>
+			<li>templating engine</li>
+			<li>engine for building docs and samples</li>
+			<li>tests for blocks</li>
+			<li>the community</li>
+		</ul>
+		<footer></footer>
+		</div></section>
 
 	<section class="slide section"><div>
 		<h2>BEM Platform: How to start?</h2>
